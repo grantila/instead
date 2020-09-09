@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"lib": [ "es2015", "es2017" ],
+		"types": [ "jest" ],
+		"outDir": "dist",
+		"sourceMap": true,
+		"module": "CommonJS",
+		"target": "es2018",
+		"declaration": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"strict": true
+	},
+	"include": [
+		"index.ts",
+		"lib"
+	]
+}

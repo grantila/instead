@@ -1,0 +1,50 @@
+{
+  "name": "instead",
+  "version": "0.0.0-development",
+  "description": "In-place merge-and-replace",
+  "author": "Gustaf Räntilä",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grantila/instead/issues"
+  },
+  "homepage": "https://github.com/grantila/instead#readme",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "directories": {},
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "./node_modules/.bin/rimraf dist && ./node_modules/.bin/tsc -p tsconfig.prod.json",
+    "test": "node_modules/.bin/jest",
+    "prepack": "npm run build && npm run test",
+    "cz": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantila/instead"
+  },
+  "keywords": [
+    "merge",
+    "diff",
+    "assign",
+    "deep",
+    "path"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "commitizen": "^4.2.1",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
