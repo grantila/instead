@@ -2,7 +2,6 @@
 [![downloads][downloads-image]][npm-url]
 [![build status][build-image]][build-url]
 [![coverage status][coverage-image]][coverage-url]
-[![greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 [![Language grade: JavaScript][lgtm-image]][lgtm-url]
 
 # instead
