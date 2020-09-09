@@ -3,6 +3,8 @@
 [![build status][build-image]][build-url]
 [![coverage status][coverage-image]][coverage-url]
 [![Language grade: JavaScript][lgtm-image]][lgtm-url]
+[![size][bundlephobia-image]][bundlephobia-url]
+
 
 # instead
 
@@ -50,3 +52,5 @@ const { instead } = require( 'instead' );
 [coverage-url]: https://coveralls.io/github/grantila/instead?branch=master
 [lgtm-image]: https://img.shields.io/lgtm/grade/javascript/g/grantila/instead.svg?logo=lgtm&logoWidth=18
 [lgtm-url]: https://lgtm.com/projects/g/grantila/instead/context:javascript
+[bundlephobia-image]: https://badgen.net/bundlephobia/minzip/instead
+[bundlephobia-url]: https://bundlephobia.com/result?p=instead
