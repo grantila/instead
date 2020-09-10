@@ -8,9 +8,9 @@
 
 # instead
 
-`instead` is a *deep-replace* feature which is value-wise equivalent to the expression `a = b`. But unlike pure assignment, or `Object.assign()` or any of the *deep-assign* packages, `instead` replaces values, object properties and array items with the new value, only if they differ.
+`instead` is a *deep-replace* function which is value-wise equivalent to the expression `a = b` but expressed as `a = instead( a, b )`. However, unike pure assignment, or `Object.assign()` or any of the *deep-assign* packages, `instead` replaces values, object properties and array items with the new value, only if they differ.
 
-If `a` and `b` serializes to the exact same, `(a = b) === b` is true, but `instead(a, b) === a`.
+If `a` and `b` serializes to the exact same, `(a = b) === b`, but `instead(a, b) === a`.
 
 This is sometimes extremely handy when referencial equality matters, especially when equality can optimize away unnecessary logic, such as in React.
 
@@ -24,7 +24,7 @@ const incomingValue = {
     foo: { b: 1 },
     bar: { c: 3 },
 };
-const newValue = instead( a, b );
+const newValue = instead( previousValue, incomingValue );
 // Incoming {.foo} is equivalent to previous {.foo}, so reference is kept:
 ( newValue.foo === previousValue.foo ); // true
 ( newValue.bar === incomingValue.bar ); // true

@@ -77,8 +77,6 @@ export function instead< T >( target: T, source: T ): T
 		);
 		const extraSourceKeys = difference( sourceKeys, targetKeys );
 		const newTarget = bothKeys.length < targetKeys.length;
-		// // @ts-ignore
-		// console.log("bothKeys.length < targetKeys.length", bothKeys.length, targetKeys.length)
 		const maybeNewTarget = newTarget ? { } as T : target;
 
 		for ( const key of bothKeys )
